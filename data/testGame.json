@@ -1,0 +1,26 @@
+{
+    "room1": {
+        "alias": "a test area",
+        "description": "You find yourself in a test area. This is an area for testing things.",
+        "actions": null,
+        "objects": null,
+        "exits": {
+            "north": "room2",
+            "south": null,
+            "east": null,
+            "west": null
+        }
+    },
+    "room2": {
+        "alias": "the other room",
+        "description": "You are now located in the other room. This is a place where other things are tested.",
+        "actions": null,
+        "objects": null,
+        "exits": {
+            "north": null,
+            "south": "room1",
+            "east": null,
+            "west": null
+        }
+    }
+}
