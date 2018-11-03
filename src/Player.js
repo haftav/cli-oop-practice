@@ -1,5 +1,5 @@
-class Player {
-    constructor(location, name) {
+module.exports = class Player {
+    constructor(name) {
         this.name = name;
         this.inventory = [];
     }
@@ -13,5 +13,4 @@ class Player {
             console.log(this.inventory[i], "\n");
         }
     }
-
 }
