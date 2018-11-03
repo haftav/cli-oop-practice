@@ -1,5 +1,5 @@
 module.exports = class Area {
-    constructor({ alias, description, exits }) {
+    constructor({ alias, description, exits, winArea }) {
         this.alias = alias;
         this.description = description;
 
@@ -7,10 +7,12 @@ module.exports = class Area {
         this.south = exits.south;
         this.east = exits.east;
         this.west = exits.west;
+
+        this.winArea = winArea ? winArea : null;
     }
 
     alertInvalidExit() {
-        console.log("You can't go in this direction.\n");
+        console.log("\nYou can't go in this direction.\n");
     }
 
     describeMovement(direction) {

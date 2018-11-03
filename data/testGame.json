@@ -16,6 +16,7 @@
         "description": "You are now located in the other room. This is a place where other things are tested.",
         "actions": null,
         "objects": null,
+        "winArea": true,
         "exits": {
             "north": null,
             "south": "room1",
