@@ -1,9 +1,14 @@
 {
     "room1": {
-        "alias": "Starting Area",
+        "areaName": "Starting Area",
         "description": "You find yourself in the starting area. A dark corridor stretches in front of you to the north.",
         "actions": null,
-        "objects": null,
+        "objects": [
+            {
+                "name": "sword",
+                "description": "A sharp piece of metal!"
+            }
+        ],
         "exits": {
             "north": "room2",
             "south": null,
@@ -12,7 +17,7 @@
         }
     },
     "room2": {
-        "alias": "the other room",
+        "areaName": "the other room",
         "description": "You are in the main corridor. A brightly lit room is to your east. You smell food coming from the west.",
         "actions": null,
         "objects": null,
@@ -24,7 +29,7 @@
         }
     },
     "room3": {
-        "alias": "A laboratory",
+        "areaName": "A laboratory",
         "description": "There is a small laboratory here. The main corridor is to your west.",
         "actions": null,
         "objects": null,
@@ -36,7 +41,7 @@
         }
     },
     "room4": {
-        "alias": "A kitchen",
+        "areaName": "A kitchen",
         "description": "You are now in the kitchen. To your east is the main corridor.",
         "actions": null,
         "objects": null,
@@ -49,7 +54,7 @@
     },
     "room5": {
         "winArea": true,
-        "alias": "The final area",
+        "areaName": "The final area",
         "description": "You are in the final area. An exit door is right in front of you.",
         "actions": null,
         "objects": null,

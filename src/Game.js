@@ -11,7 +11,8 @@ Game.prototype.initialize = function(gameData) {
     console.log("\n")
     console.log("---------------- Welcome to a Game of OOP ----------------\n");
     this.currentArea = new Area(gameData.room1);
-    this.play(gameData)
+    console.log(this.currentArea);
+    this.play(gameData);
 }
 
 Game.prototype.play = function(gameData) {
