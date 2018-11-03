@@ -1,7 +1,7 @@
 {
     "room1": {
-        "alias": "a test area",
-        "description": "You find yourself in a test area. This is an area for testing things.",
+        "alias": "Starting Area",
+        "description": "You find yourself in the starting area. A dark corridor stretches in front of you to the north.",
         "actions": null,
         "objects": null,
         "exits": {
@@ -13,13 +13,49 @@
     },
     "room2": {
         "alias": "the other room",
-        "description": "You are now located in the other room. This is a place where other things are tested.",
+        "description": "You are in the main corridor. A brightly lit room is to your east. You smell food coming from the west.",
         "actions": null,
         "objects": null,
-        "winArea": true,
+        "exits": {
+            "north": "room5",
+            "south": "room1",
+            "east": "room3",
+            "west": "room4"
+        }
+    },
+    "room3": {
+        "alias": "A laboratory",
+        "description": "There is a small laboratory here. The main corridor is to your west.",
+        "actions": null,
+        "objects": null,
         "exits": {
             "north": null,
-            "south": "room1",
+            "south": null,
+            "east": null,
+            "west": "room2"
+        }
+    },
+    "room4": {
+        "alias": "A kitchen",
+        "description": "You are now in the kitchen. To your east is the main corridor.",
+        "actions": null,
+        "objects": null,
+        "exits": {
+            "north": null,
+            "south": null,
+            "east": "room2",
+            "west": null
+        }
+    },
+    "room5": {
+        "winArea": true,
+        "alias": "The final area",
+        "description": "You are in the final area. An exit door is right in front of you.",
+        "actions": null,
+        "objects": null,
+        "exits": {
+            "north": null,
+            "south": "room2",
             "east": null,
             "west": null
         }

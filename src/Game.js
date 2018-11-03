@@ -23,8 +23,6 @@ Game.prototype.play = function(gameData) {
     }
 
     this.loop(gameData);
-    // let direction = await prompter.chooseDirection();
-
 }
 
 Game.prototype.loop = async function(gameData) {
